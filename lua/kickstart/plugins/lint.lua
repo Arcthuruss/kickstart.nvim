@@ -7,6 +7,10 @@ return {
       local lint = require 'lint'
       lint.linters_by_ft = {
         markdown = { 'markdownlint' },
+        php = { 'phpstan' },
+        c = { 'cpplint' },
+        javascript = { 'quick-lint-js' },
+        python = { 'ruff', 'mypy' },
       }
 
       -- To allow other plugins to add linters to require('lint').linters_by_ft,
